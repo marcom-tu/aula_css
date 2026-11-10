@@ -1,7 +1,7 @@
 /*comentario*/
 /*
 CSS INLINE (FUNCIONA NO .HTML)
-style="background:rgb(16,174,69);"
+<... style="background:rgb(16,174,69);color:cyan">
 */
 p{
     color:rgb(0, 255, 255);
