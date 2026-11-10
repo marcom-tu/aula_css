@@ -4,5 +4,6 @@ CSS INLINE (FUNCIONA NO .HTML)
 <... style="background:rgb(16,174,69);color:cyan">
 */
 p{
+    padding: 50px 50px 50px 50px;/*Sentido Horario*/
     color:rgb(0, 255, 255);
 }
