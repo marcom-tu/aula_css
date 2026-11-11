@@ -3,7 +3,79 @@
 CSS INLINE (FUNCIONA NO .HTML)
 <... style="background:rgb(16,174,69);color:cyan">
 */
-p{
-    padding: 50px 50px 50px 50px;/*Sentido Horario*/
-    color:rgb(0, 255, 255);
+
+/*Seletor Universal*/
+* {
+    color: black;
+    /*Nome cor*/
+}
+
+/*Seletor TAG Especifica*/
+p {
+    color: rgb(58, 113, 0);
+}
+
+/*Seletor Múltiplas TAGs*/
+h5,
+h6 {
+    color: darkgoldenrod;
+}
+
+/*Seletor por ID*/
+#titulo2 {
+    /**/
+    color: rgba(46, 109, 255, 0.59);
+    /*RGB com Alpha*/
+}
+
+/*Seletor por Classe*/
+.classe1 {
+    color: hsl(270, 80%, 50%);
+    /*Matiz,Saturação,Luminosidade*/
+}
+
+/*TIPO PADING*/
+.Padding {
+    padding: 50px 50px 50px 50px;
+    /*Sentido Horario*/
+}
+
+/*TIPO BORDER*/
+.border {
+    border-width: 3px;
+    /*Tamanho
+        border-top-width: 3px
+        border-right-width: 3%
+        border-botton-width: 3px
+        border-left-width: 3%
+        */
+    border-color: aqua;
+    /*Cor
+        border-color-top: aqua
+        border-color-right: aqua
+        border-color-botton: aqua
+        border-color-left: aqua
+        */
+    border-style: solid;
+    /*Tipo
+        border-top-style: groove, ridge, inset, outset = Efeitos 3D
+        border-right-style: dashed = Tracejada
+        border-botton-style: dotted = Pontilhada
+        border-left-style: double = Dupla
+            none ou hidden = Sem Borda
+        */
+    border-radius: 10px;
+    /*Curvatura*/
+}
+
+/*TIPO MARGIN*/
+.margin {
+    margin: auto;
+    /*Tamanho
+        margin-top: 3px
+        margin-right: 3%
+        margin-botton: 3px
+        margin-left: 3%
+        */
+    margin-inline-start: auto;
 }
