@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta http-equiv="refresh" content="1"><!--Tempo de atualização da página em segundos-->
     <style>
         h1 {
             color: rgb(42, 106, 255)
@@ -41,23 +42,25 @@
         }
 
         .tab_reg_int {
+            width: 350px;
             border: 2px solid purple;
-            padding: 30px auto 10px auto;
-            margin: 10px auto 30px auto;
+            padding: auto;
+            margin: auto;
         }
 
-        .table_th {
-            width: 100px;
+        th {
+            width: 120px;
+            height: 50px;
             border: 1px solid purple;
-            padding: 10px 100px 10px 10px;
-            margin: auto;
+            padding: 10px auto 10px auto;
             color: purple;
         }
-        .table_td {
-            width:100px;
+
+        td {
+            width: 120px;
+            height: 50px;
             border: 1px solid gray;
-            padding: 10px 100px 10px 10px;
-            margin: auto;
+            padding: 10px auto 10px auto;
         }
 
         .form_insc_ext {
@@ -96,34 +99,39 @@
         <div class="tab_reg_ext">
             <h2>Tabela de Registros</h2>
             <div class="tab_reg_int">
-                <table
-    cellspacing="1" 
-    cellpadding="1" >
+                <table>
                     <th>
-                        <div class="table_th">
-                            ID
-                        </div>
+                        ID
                     </th>
                     <th>
-                        <div class="table_th">
-                            Nome
-                        </div>
-
+                        Nome
                     </th>
                     <th>
-                        <div class="table_th">
-                            Status
-                        </div>
+                        Status
                     </th>
+                </table>
+                <table>
                     <tr>
-                        <td><div class="table_td">001</div></td>
-                        <td><div class="table_td">Ana Silva</div></td>
-                        <td><div class="table_td">Ativo</div></td>
+                        <td>
+                            <div class="table_td">001</div>
+                        </td>
+                        <td>
+                            <div class="table_td">Ana Silva</div>
+                        </td>
+                        <td>
+                            <div class="table_td">Ativo</div>
+                        </td>
                     </tr>
                     <tr>
-                        <td><div class="table_td">002</div></td>
-                        <td><div class="table_td">Bruno Costa</div></td>
-                        <td><div class="table_td">Pendente</div></td>
+                        <td>
+                            <div class="table_td">002</div>
+                        </td>
+                        <td>
+                            <div class="table_td">Bruno Costa</div>
+                        </td>
+                        <td>
+                            <div class="table_td">Pendente</div>
+                        </td>
                     </tr>
                 </table>
             </div>
