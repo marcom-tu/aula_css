@@ -79,3 +79,32 @@ h6 {
         */
     margin-inline-start: auto;
 }
+
+/*DISPLAY BLOCK*/
+.block {
+    display: block;
+}
+/*DISPLAY INLINE*/
+.inline {
+    display: inline;
+    /*
+    Quebra linha = Não
+    WIDTH || HEIGTH = Não
+    PADDING || MARGIN = Sim para LEFT || RIGTH
+    */
+}
+
+/*DISPLAY INLINE-BLOCK*/
+.inline-block {
+    display: inline-block;
+    /*
+    Quebra linha = Não
+    WIDTH || HEIGTH = Sim
+    PADDING || MARGIN = Sim
+    */
+}
+
+/*DISPLAY NONE*/
+.none {
+    display: none;
+}
