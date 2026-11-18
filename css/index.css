@@ -84,6 +84,7 @@ h6 {
 .block {
     display: block;
 }
+
 /*DISPLAY INLINE*/
 .inline {
     display: inline;
@@ -102,6 +103,86 @@ h6 {
     WIDTH || HEIGTH = Sim
     PADDING || MARGIN = Sim
     */
+}
+
+/*DISPLAY FLEX*/
+.flex {
+    display: flex;
+    flex-direction: row;
+    /*
+        row = Esquerda para Direita (Padrão)
+        row-reverse = Direita para Esquerda
+        column = Cima para Baixo
+        column-reverse = Baixo para Cima
+    */
+    flex-wrap: nowrap;
+    /*
+        nowrap = Mantém linha reduz escala (Padrão)
+        wrap = Quebra de linha (→ ↓ → ↓)
+        wrap-reverse = Quebra de linha (→ ↑ → ↑)
+    */
+    justify-content: flex-start;
+    /*
+        flex-start = Alinha no inicio (Esquerda) (Padrão)
+        flex-end = anlinha no final (Direita)
+        center = Centraliza
+        space-between = Espaçamento igual entre intens
+        space-around = Espaçamento igual de margin
+        space-evenly = Espaçamento igual de tudo
+    */
+    align-items: stretch;
+    /*
+        stretch = Estica pra preencher (Padrão)
+        flex-start = Alinha no topo/inicio
+        flex-end = Alinha na base/fim
+        center = Centraliza
+        baseline = Alinha a base do texto
+    */
+    gap: 15px; /*Espaçamento*/
+}
+
+/*DISPLAY GRID*/
+.grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px; /*Qtd e largura das colunas*/
+    grid-template-rows: 200px 200px 200px;/*Qtd e altura das linhas*/
+    justify-content: stretch;
+    /* HORIZONTAL GRID
+        stretch = Estica pra preencher (Padrão)
+        start = Alinha no inicio (Esquerda)
+        end = anlinha no final (Direita)
+        center = Centraliza
+        space-between = Espaçamento igual entre intens
+        space-around = Espaçamento igual de margin
+        space-evenly = Espaçamento igual de tudo  
+    */
+    align-content: stretch;
+    /* VERTICAL GRID
+        stretch = Estica pra preencher (Padrão)
+        start = Alinha no inicio (Topo)
+        end = anlinha no final (Base)
+        center = Centraliza
+        space-between = Espaçamento igual entre intens
+        space-around = Espaçamento igual de margin
+        space-evenly = Espaçamento igual de tudo
+    */
+    justify-items: stretch;
+    /*
+        stretch = Estica pra preencher (Padrão)
+        start = Alinha no inicio (Esquerda)
+        end = anlinha no final (Direita)
+        center = Centraliza
+    */
+    align-items: stretch;
+    /*
+        stretch = Estica pra preencher (Padrão)
+        start = Alinha no inicio (Topo)
+        end = anlinha no final (Base)
+        center = Centraliza
+    */
+    gap: 10px; /*Espaçamento Geral*/
+    column-gap: 10px;/*Espaçamento Coluna*/
+    row-gap: 10px ;/*Espaçamento Linhas*/
 }
 
 /*DISPLAY NONE*/
