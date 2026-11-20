@@ -34,13 +34,13 @@ h6 {
     /*Matiz,Saturação,Luminosidade*/
 }
 
-/*TIPO PADING*/
+/*CAIXA*/
 .Padding {
     padding: 50px 50px 50px 50px;
     /*Sentido Horario*/
 }
 
-/*TIPO BORDER*/
+/*CAIXA*/
 .border {
     border-width: 3px;
     /*Tamanho
@@ -68,7 +68,7 @@ h6 {
     /*Curvatura*/
 }
 
-/*TIPO MARGIN*/
+/*CAIXA*/
 .margin {
     margin: auto;
     /*Tamanho
@@ -80,12 +80,12 @@ h6 {
     margin-inline-start: auto;
 }
 
-/*DISPLAY BLOCK*/
+/*DISPLAY*/
 .block {
     display: block;
 }
 
-/*DISPLAY INLINE*/
+/*DISPLAY*/
 .inline {
     display: inline;
     /*
@@ -95,7 +95,7 @@ h6 {
     */
 }
 
-/*DISPLAY INLINE-BLOCK*/
+/*DISPLAY*/
 .inline-block {
     display: inline-block;
     /*
@@ -105,7 +105,7 @@ h6 {
     */
 }
 
-/*DISPLAY FLEX*/
+/*DISPLAY*/
 .flex {
     display: flex;
     flex-direction: row;
@@ -141,7 +141,7 @@ h6 {
     gap: 15px; /*Espaçamento*/
 }
 
-/*DISPLAY GRID*/
+/*DISPLAY*/
 .grid {
     display: grid;
     grid-template-columns: 200px 200px 200px; /*Qtd e largura das colunas*/
@@ -185,7 +185,98 @@ h6 {
     row-gap: 10px ;/*Espaçamento Linhas*/
 }
 
-/*DISPLAY NONE*/
+/*DISPLAY*/
 .none {
     display: none;
+}
+
+/*TEXTOS*/
+.overflow{
+    overflow: auto;
+    /*
+        visible = vaza por cima dos demais
+        hidden = esconde oque não tem espaço
+        clip = corta oque não tem espaço
+        scroll = adiciona barra de rolagem sempre
+        auto = adiciona barra de rolagem quando necessário
+    */
+}
+
+/*TEXTOS*/
+.white-space{
+    white-space: break-spaces;
+    /*
+        normal = 1 espaço / quebra linha (padrão)
+        nowrap = 1 espaço / não quebra linha
+        pre = + espaços / quebra apenas com "enter"
+        pre-wrap = + espaços / quebra com "enter", borda
+        pre-line = 1 espaço / quebra com "enter", borda
+        break-spaces = todos espaços / quebra com "enter", borda, + espaços
+    */
+}
+
+/*TEXTOS*/
+.text-_____{
+    text-align: left;/* left (padrão) / right / center / justify */
+    text-indent: 10px;/* Recuo parágrafo */
+    text-decoration: underline solid red 1px;/* Decoração do text*/
+    text-decoration-line: underline;
+    /*
+        overline = cima
+        line-through = meio
+        underline = baixo
+    */
+    text-decoration-style: solid;
+    /*
+        dashed = tracejado
+        dotted  = pontilhado
+        double = dupla
+        solid = simples
+        wavy = ondulado
+    */
+    text-decoration-color: red; 
+    /* Cor decoração*/
+    text-decoration-thickness: 1px; 
+    /* Espessura decoração*/
+    text-underline-offset: 1px;
+    /* Distancia entre texto e sublinhado */
+    text-shadow: 1px 3px 5px black;
+    /*: > / V / blur / cor */
+    text-transform: ;
+    /* eXeMpLo
+        uppercase = EXEMPLO
+        capitalize = Exemplo
+        lowercase = exemplo
+        none = eXeMpLo
+    */
+    text-overflow: ellipsis; /*white-space:nowrap & overflow: hidden;*/
+    /*
+        clip = corta no limite (Padrão)
+        ellipsis = coloca "..." no corte
+    */
+}
+
+/*TEXTOS*/
+.espacamento{
+    word-spacing: normal; /* Espaçamento entre    palavras */ 
+    letter-spacing: normal; /* Espaçamento entre l e t r a s */
+}
+
+/*GRADIENTE*/
+.gradiente{
+    background-image: linear-gradient(135deg, #1abc9c 0% 50%, #2c3e50 100%);
+    /*
+    (to rigth, red,black)
+    (135deg, #1abc9c 0% 50%, #2c3e50 100%)
+    */
+    background-image: radial-gradient(circle, #1abc9c 10%, #2c3e50 60%);
+    /*
+    (circle at top left, #1abc9c, #2c3e50)
+    (circle, #1abc9c, #2c3e50)
+    */
+    background-image: conic-gradient( #1abc9c 10%, #2c3e50 60%);
+    /*
+    (circle at top left, #1abc9c, #2c3e50)
+    (circle, #1abc9c, #2c3e50)
+    */
 }
