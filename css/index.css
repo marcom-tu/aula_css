@@ -280,3 +280,26 @@ h6 {
     (circle, #1abc9c, #2c3e50)
     */
 }
+
+/*VARIAVEIS*/
+:root{
+    --text-color:red;
+    --fundo_cor: black;
+}
+.variavel{
+    color: var(--text-color);
+    background-color: var(--fundo_cor);
+}
+
+/*POSITION*/
+.position{
+    position: fixed;
+    /*
+    static = fluxo normal | sem referencia | rolagem normal (padrão)
+    relative = espaço mantido | referencia original | rolagem normal
+    absolute = espaço ocupavel | referencia ancestral | rolagem normal
+    fixed = sai do fluxo | janela de vizualização | travado na tela
+    sticky = espaço mantido até limite | referencia ancestral | rolagem até limite
+    */
+    z-index: 1;/*Camada*/
+}
