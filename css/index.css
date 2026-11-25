@@ -303,3 +303,81 @@ h6 {
     */
     z-index: 1;/*Camada*/
 }
+
+/*MOUSE*/
+h1:hover{
+    /* Quando o mouse passa por cima */ 
+}
+#titulo:active{
+    /* Enquanto o objeto está sendo clicado */
+}
+
+/*TRANSFORM*/
+.transform{
+    transform: translate(90px,-90px) scale(1.5) rotate(5deg) skew(15deg);
+    /*
+    :translate(,) scale() rotate(deg) skew(deg);
+    */
+    transform: translate(x,y);/* movimento */
+    /*
+        translateX()
+        translateY()
+    */
+    transform: scale(n,n); /* escala */
+    /*  1,1 = normal / 0,0 = some / -1,-1 = inverte
+        scaleX()
+        scaleY()
+    */
+    transform: rotate(deg); /* rotação */
+    transform: skew(deg); /* inclinação */
+}
+
+/*KEYFRAMES*/
+@keyframes key_frame_h1 {
+    0%{ /* from */
+        transform: scale(1);
+    }
+    100%{ /* to */
+        transform: scale(1.5);
+    }
+}
+
+/*AMIMATION*/
+.animation{
+    animation: key_frame_h1 10s linear 1s 2 normal forwards;
+    /*
+    name duration timing delay iteration direction fill
+    */
+    animation-name: key_frame_h1; /* identiifcador */
+    animation-duration: 10s;/* 10ms | 10s */
+    animation-timing-function: linear;
+    /*
+        ease = lento rapido lento (padrão)
+        ease-in = lento rapido
+        ease-out = rapido lento
+        ease-in-out = rapido lento rapido
+        linear = linear
+        steps(5) = quantidade de imagens
+    */
+    animation-delay: 1s;/* 10ms | 10s */
+    animation-iteration-count: 2;/* n | infinite */
+    animation-direction: normal;
+    /*
+        normal = 0% > 100% (padrão)
+        reverse = 100% > 0%
+        alternate = 0% > 100% > 0%
+        alternate-reverse = 100% > 0% > 100%
+    */
+    animation-fill-mode: none;
+    /*
+        none = ignora estilo keyframe
+        forwards = para no fim (direction: normal)
+        backwards = para no inicio (direction: reverse)
+        both = para em ambos (direction: QUALQUER)
+    */
+    animation-play-state: running;
+    /*
+        running = roda a animação
+        paused = para a animação
+    */
+}
